@@ -16,14 +16,22 @@ body {
 button {
     background-color: transparent;
     border: none;
-    outline: none;
 
     font-family: $font-ubuntu;
     font-weight: 700;
 }
 
-.main-btn {
+.anchor-btn-style {
     padding: 1em 1.5em;
     border-radius: 2em;
     font-size: 16px;
+}
+
+ul, ol {
+    list-style: none;
+    li {
+        a {
+            text-decoration: none;
+        }
+    }
 }

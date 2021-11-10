@@ -10,92 +10,94 @@
 
 </head>
 <body>
-  <header id="header">
-    <nav id="header-nav">
+  <header class="header">
+    <div class="nav-wrapper flex">
       <img class="logo" src="./images/logo.svg" alt="blogr logo">
-      <ul class="nav-list">
-        <!-- PRODUCT -->
-        <li class="navlist-item" id="product">
-          <details class="details-dropdown">
-            <summary class="nav-item">Product</summary>
-            <div class="dropdown-wrapper">
-              <ul>
-                <li>
-                  <a href="#contact">Overview</a>
-                </li>
-                <li>
-                  <a href="#contact">Pricing</a>
-                </li>
-                <li>
-                  <a href="#contact">Marketplace</a>
-                </li>
-                <li>
-                  <a href="#contact">Features</a>
-                </li>
-                <li>
-                  <a href="#contact">Integrations</a>
-                </li>
-              </ul>
-            </div>
-          </details>
-        </li>
-
-        <!-- COMPANY -->
-        <li class="navlist-item" id="company-item">
-          <details class="details-dropdown">
-            <summary class="nav-item">Company</summary>
-            <div class="dropdown-wrapper">
-              <ul>
-                <li>
-                  <a href="#contact">About</a>
-                </li>
-                <li>
-                  <a href="#contact">Team</a>
-                </li>
-                <li>
-                  <a href="#contact">Blog</a>
-                </li>
-                <li>
-                  <a href="#contact">Careers</a>
-                </li>
-              </ul>
-            </div>
-          </details>
-        </li>
-
-          <!-- CONNECT -->
-          <li>
+      <nav class="header-nav flex">
+        <button aria-label="toggle navigation menu" aria-expanded="false"><img src="./images/icon-hamburger.svg" alt="" aria-hidden="true"></button>
+        <ul class="nav-list">
+          <!-- PRODUCT -->
+          <li class="navlist-item" id="product">
             <details class="details-dropdown">
-              <summary class="nav-item">Connect</summary>
+              <summary class="nav-item">Product</summary>
               <div class="dropdown-wrapper">
                 <ul>
                   <li>
-                    <a href="#contact">Contact</a>
+                    <a href="#contact">Overview</a>
                   </li>
                   <li>
-                    <a href="#contact">Newsletter</a>
+                    <a href="#contact">Pricing</a>
                   </li>
                   <li>
-                    <a href="#contact">LinkedIn</a>
+                    <a href="#contact">Marketplace</a>
+                  </li>
+                  <li>
+                    <a href="#contact">Features</a>
+                  </li>
+                  <li>
+                    <a href="#contact">Integrations</a>
                   </li>
                 </ul>
               </div>
             </details>
           </li>
 
-          <li class="horizontal-line">
-            <hr />
-          </li> 
+          <!-- COMPANY -->
+          <li class="navlist-item" id="company-item">
+            <details class="details-dropdown">
+              <summary class="nav-item">Company</summary>
+              <div class="dropdown-wrapper">
+                <ul>
+                  <li>
+                    <a href="#contact">About</a>
+                  </li>
+                  <li>
+                    <a href="#contact">Team</a>
+                  </li>
+                  <li>
+                    <a href="#contact">Blog</a>
+                  </li>
+                  <li>
+                    <a href="#contact">Careers</a>
+                  </li>
+                </ul>
+              </div>
+            </details>
+          </li>
 
-          <li class="btn-main btn-login">
-            <button>Login</button>
-          </li>
-          <li class="btn-main btn-signup">
-            <button>Sign Up</button>
-          </li>
-      </ul>
-      <img src="./images/icon-hamburger.svg" alt="toggle hamburger">
-    </nav>
+            <!-- CONNECT -->
+            <li>
+              <details class="details-dropdown">
+                <summary class="nav-item">Connect</summary>
+                <div class="dropdown-wrapper">
+                  <ul>
+                    <li>
+                      <a href="#contact">Contact</a>
+                    </li>
+                    <li>
+                      <a href="#contact">Newsletter</a>
+                    </li>
+                    <li>
+                      <a href="#contact">LinkedIn</a>
+                    </li>
+                  </ul>
+                </div>
+              </details>
+            </li>
+
+            <li class="horizontal-line">
+              <hr />
+            </li> 
+
+            <li class="btn-main btn-login">
+              <button>Login</button>
+            </li>
+            <li class="btn-main btn-signup">
+              <button>Sign Up</button>
+            </li>
+        </ul>
+      </nav>
+    </div>
 
     <div class="hero-content">
       <h1>
@@ -105,13 +107,24 @@
         Grow your audience and build your online brand
       </p>
   
-      <div class="hero-btns">
-        <button class="main-btn start-free-btn">Start for Free</button>
-        <button class="main-btn learn-more-btn">Learn More</button>
+      <div class="hero-links">
+        <ul class="more-info-links">
+          <li>
+            <a class="anchor-btn-style start-free-btn" href="#start-free">Start for Free</a>
+          </li>
+          <li>
+            <a class="anchor-btn-style learn-more-btn" href="#learn-more">Learn More</a>
+          </li>
+        </ul>
+        
       </div>
     </div>
-
   </header>
+  
+  <main>
+    
+  </main>
+
   <!-- Designed for the future
 
   Introducing an extensible editor

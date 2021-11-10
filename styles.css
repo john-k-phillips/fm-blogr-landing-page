@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
-#header {
+.header {
   background: url("../images/bg-pattern-intro.svg"), linear-gradient(125deg, #FF8F71, #FF3E55);
   background-repeat: no-repeat;
   background-size: 400%;
@@ -8,17 +8,20 @@
   border-bottom-left-radius: 5em;
 }
 
-#header-nav {
+.flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.nav-wrapper {
   padding: 3em 1.5em;
 }
 
-#header-nav .logo {
+.logo {
   margin-right: auto;
   width: 82px;
 }
@@ -47,24 +50,27 @@
   font-size: 1.1em;
 }
 
-.hero-content .hero-btns {
+.hero-content .hero-links {
+  margin: auto;
+  margin-top: 2em;
+  width: 80%;
+}
+
+.hero-content .hero-links ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: auto;
-  margin-top: 2em;
-  width: 80%;
 }
 
-.hero-content .hero-btns .start-free-btn {
+.hero-content .hero-links .start-free-btn {
   background-color: #FFF;
   color: #FF505C;
 }
 
-.hero-content .hero-btns .learn-more-btn {
+.hero-content .hero-links .learn-more-btn {
   border: 1px solid #FFF;
   color: #FFF;
 }
@@ -84,14 +90,21 @@ body {
 button {
   background-color: transparent;
   border: none;
-  outline: none;
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
 }
 
-.main-btn {
+.anchor-btn-style {
   padding: 1em 1.5em;
   border-radius: 2em;
   font-size: 16px;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+ul li a, ol li a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=styles.css.map */

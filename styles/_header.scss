@@ -1,4 +1,4 @@
-#header {
+.header {
     background: url('../images/bg-pattern-intro.svg'), linear-gradient(125deg, #FF8F71, #FF3E55);
     background-repeat: no-repeat;
     background-size: 400%;
@@ -8,15 +8,18 @@
     border-bottom-left-radius: 5em;
 }
 
-#header-nav {
+.flex {
     display: flex;
     align-items: center;
+}
 
+.nav-wrapper {
     padding: 3em 1.5em;
-    .logo {
-        margin-right: auto;
-        width: 82px;
-    }
+}
+
+.logo {
+    margin-right: auto;
+    width: 82px;
 }
 
 .nav-list {
@@ -39,9 +42,11 @@
         font-size: 1.1em;
     }
 
-    .hero-btns {
-        display: flex;
-        justify-content: space-between;
+    .hero-links {
+        ul {
+            display: flex;
+            justify-content: space-between;
+        }
 
         margin: auto;
         margin-top: 2em;
