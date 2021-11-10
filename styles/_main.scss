@@ -1,0 +1,78 @@
+main {
+    margin-top: 5em;
+    h2 {
+        color: #1F3E5A;
+        text-align: center;
+        margin: auto;
+        font-size: clamp(2em, 4vw, 4em); 
+    }
+}
+
+// SECTIONS - FUTURE & OPEN
+.content-wrapper {
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
+}
+
+.img-wrapper {
+    margin-top: 2em;
+    img {
+        max-width: 100%;
+    }
+}
+
+.default-section {
+    width: 85%;
+    margin: auto;
+    h3 {
+        color: #1F3E5A;
+        font-size: 1.6em;
+    }
+    p {
+        color: #4C5862;
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+}
+
+// INFRASTURCUTRE
+.infrastructure {
+    background: url('../images/bg-pattern-circles.svg'), linear-gradient(90deg, #2D2E40, #3F4164);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+
+    border-top-right-radius: 5em;
+    border-bottom-left-radius: 5em;
+
+    position: relative;
+    margin-top: 15em;
+    .infrastructure-img-wrapper {
+        position: absolute;
+        top: -200px;
+        img {
+            max-width: 100%;
+        }
+    }
+    .infrastructure-content {
+        padding-top: 15em;
+        text-align: center;
+        color: #FFF;
+        h3 {
+            font-size: 2em;
+            margin-bottom: .5em;
+        }
+        p {
+            max-width: 80%;
+            margin: auto;
+            line-height: 1.6em;
+            padding-bottom: 5em;
+        }
+    }
+}
+
+
+.desktop {
+    display: none;
+}
