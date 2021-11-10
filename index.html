@@ -6,6 +6,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles.css">
+
+  <script src="./app.js" defer></script>
   <title>Frontend Mentor | [Blogr]</title>
 
 </head>
@@ -14,7 +16,18 @@
     <div class="nav-wrapper flex">
       <img class="logo" src="./images/logo.svg" alt="blogr logo">
       <nav class="header-nav flex">
-        <button aria-label="toggle navigation menu" aria-expanded="false"><img src="./images/icon-hamburger.svg" alt="" aria-hidden="true"></button>
+        <button 
+          class="hamburger-btn"
+          aria-label="toggle navigation menu" 
+          aria-expanded="false"
+          onclick="toggleNav()"
+          onkeypress="toggleNav()"
+        >
+          <img 
+            src="./images/icon-hamburger.svg" 
+            alt="" 
+            aria-hidden="true" />
+          </button>
         <ul class="nav-list">
           <!-- PRODUCT -->
           <li class="navlist-item" id="product">
