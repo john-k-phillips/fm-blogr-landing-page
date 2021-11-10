@@ -265,10 +265,6 @@ main h2 {
   margin: auto;
 }
 
-.img-wrapper {
-  margin-top: 2em;
-}
-
 .img-wrapper img {
   max-width: 100%;
 }
@@ -289,47 +285,54 @@ main h2 {
   margin-bottom: 2em;
 }
 
-.infrastructure {
-  background: url("../images/bg-pattern-circles.svg"), -webkit-gradient(linear, left top, right top, from(#2D2E40), to(#3F4164));
-  background: url("../images/bg-pattern-circles.svg"), linear-gradient(90deg, #2D2E40, #3F4164);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-  border-top-right-radius: 5em;
-  border-bottom-left-radius: 5em;
-  position: relative;
-  margin-top: 15em;
-}
-
-.infrastructure .infrastructure-img-wrapper {
-  position: absolute;
-  top: -200px;
-}
-
-.infrastructure .infrastructure-img-wrapper img {
+.infrastructure-img-wrapper img {
   max-width: 100%;
-}
-
-.infrastructure .infrastructure-content {
-  padding-top: 15em;
-  text-align: center;
-  color: #FFF;
-}
-
-.infrastructure .infrastructure-content h3 {
-  font-size: 2em;
-  margin-bottom: .5em;
-}
-
-.infrastructure .infrastructure-content p {
-  max-width: 80%;
-  margin: auto;
-  line-height: 1.6em;
-  padding-bottom: 5em;
 }
 
 .desktop {
   display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+  .img-wrapper {
+    width: 200%;
+    overflow: hidden;
+  }
+  .img-wrapper img {
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+  }
+  .content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin-right: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+  }
+  .open-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 0;
+  }
+  .open-wrapper .img-wrapper img {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
 }
 
 * {
