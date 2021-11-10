@@ -96,6 +96,8 @@
     background-color: #EFEFF0;
     padding: 0em clamp(2em, 15vw, 10em);
     margin-top: 1em;
+    font-family: $font-ubuntu;
+    font-weight: 400;
     ul {
         display: flex;
         flex-direction: column;
@@ -147,10 +149,13 @@
     }
 }
 
-// DESKTOP RESPONSIVE NAV ITEMS
-
 @media screen and (min-width: 1440px) {
 
+    .header {
+        background-size: 200%;
+    }
+
+    // NAV ITEMS
     .hamburger-btn {
         display: none;
     }
@@ -174,6 +179,13 @@
         margin-left: 2em;
 
         color: #FFF;
+        summary {
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+                text-decoration-thickness: 2px;
+            }
+        }
         hr {
             display: none;
         }
@@ -182,6 +194,9 @@
     .btn-main {
         width: 40%;
         display: flex;
+        button {
+            cursor: pointer;
+        }
     }
 
     .btn-signup {
@@ -190,6 +205,12 @@
             background: #FFF;
             color: #FF505C;
         }
+        &:hover {
+            button {
+                background: #FF7B86;
+                color: #FFF;
+            }
+        }
     }
     
     .btn-login {
@@ -197,6 +218,24 @@
         margin-left: 10em;
         button {
             color: #FFF;
+            &:hover {
+                color: #FFBEBD;
+            }
+        }
+    }
+
+    // DESKTOP DROPDOWN WRAPPERS
+    .dropdown-wrapper {
+        position: absolute;
+        width: auto;
+        padding: 1em;
+        top: 100%;
+        ul {
+            a {
+                &:hover {
+                   font-weight: bold;
+                }
+            }
         }
     }
 }

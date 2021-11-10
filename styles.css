@@ -111,6 +111,8 @@
   background-color: #EFEFF0;
   padding: 0em clamp(2em, 15vw, 10em);
   margin-top: 1em;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
   border-radius: 0.5em;
 }
 
@@ -164,6 +166,9 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .header {
+    background-size: 200%;
+  }
   .hamburger-btn {
     display: none;
   }
@@ -188,6 +193,13 @@
     margin-left: 2em;
     color: #FFF;
   }
+  .nav-list summary {
+    cursor: pointer;
+  }
+  .nav-list summary:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
   .nav-list hr {
     display: none;
   }
@@ -196,6 +208,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .btn-main button {
+    cursor: pointer;
   }
   .btn-signup {
     -webkit-box-pack: start;
@@ -206,6 +221,10 @@
     background: #FFF;
     color: #FF505C;
   }
+  .btn-signup:hover button {
+    background: #FF7B86;
+    color: #FFF;
+  }
   .btn-login {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -214,6 +233,18 @@
   }
   .btn-login button {
     color: #FFF;
+  }
+  .btn-login button:hover {
+    color: #FFBEBD;
+  }
+  .dropdown-wrapper {
+    position: absolute;
+    width: auto;
+    padding: 1em;
+    top: 100%;
+  }
+  .dropdown-wrapper ul a:hover {
+    font-weight: bold;
   }
 }
 
@@ -240,6 +271,7 @@ button {
   padding: 1em 1.5em;
   border-radius: 2em;
   font-size: 16px;
+  font-weight: 600;
 }
 
 ul, ol {
