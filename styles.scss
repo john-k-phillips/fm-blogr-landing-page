@@ -58,3 +58,12 @@ details[open] summary::after {
     transform: rotate(180deg);
     margin-bottom: 0.5em;
 }
+
+@media screen and  (min-width: 1440px) {
+    details summary {
+        &::after {
+            background: url('../images/icon-arrow-light.svg');
+            background-repeat: no-repeat;
+        }
+    }
+}

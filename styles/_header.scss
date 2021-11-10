@@ -146,3 +146,58 @@
         color: #1F3E5A;
     }
 }
+
+// DESKTOP RESPONSIVE NAV ITEMS
+
+@media screen and (min-width: 1440px) {
+
+    .hamburger-btn {
+        display: none;
+    }
+
+    .header-nav {
+        width: 100%;
+    }
+    
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+
+        background-color: transparent;
+        box-shadow: none;
+
+        position: relative;
+        left: auto;
+
+        width: 100%;
+        padding: 0;
+        margin-left: 2em;
+
+        color: #FFF;
+        hr {
+            display: none;
+        }
+    }
+
+    .btn-main {
+        width: 40%;
+        display: flex;
+    }
+
+    .btn-signup {
+        justify-content: flex-start;
+        button {
+            background: #FFF;
+            color: #FF505C;
+        }
+    }
+    
+    .btn-login {
+        justify-content: flex-end;
+        margin-left: 10em;
+        button {
+            color: #FFF;
+        }
+    }
+}
+
