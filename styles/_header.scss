@@ -1,0 +1,57 @@
+#header {
+    background: url('../images/bg-pattern-intro.svg'), linear-gradient(135deg, #FF8F71, #FF3E55);
+    background-repeat: no-repeat;
+    background-size: 400%;
+    background-position: center;
+
+    padding-bottom: 10em;
+    border-bottom-left-radius: 5em;
+}
+
+#header-nav {
+    display: flex;
+    align-items: center;
+
+    padding: 3em 1.5em;
+    .logo {
+        margin-right: auto;
+        width: 82px;
+    }
+}
+
+.nav-list {
+    display: none;
+}
+
+.hero-content { 
+    text-align: center;
+    color: #FFF;
+    h1, p {
+        margin: auto;
+        width: 85%;
+    }
+    h1 {
+        margin-top: 2em;
+        font-size: 2.2em;
+    }
+    p {
+        font-size: 1.1em;
+    }
+
+    .hero-btns {
+        display: flex;
+        justify-content: space-between;
+
+        margin: auto;
+        margin-top: 2em;
+        width: 80%;
+        .start-free-btn {
+            background-color: #FFF;
+            color: #FF505C;
+        }
+        .learn-more-btn {
+            border: 1px solid #FFF;
+            color: #FFF;
+        }
+    }
+}
